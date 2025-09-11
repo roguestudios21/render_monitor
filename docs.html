@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Render Monitor — Docs</title>
+  <link rel="icon" href="images/icon.png"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    /* Make all doc images smaller and consistent */
+    .doc-img {
+      max-width: 300px; /* Adjust size as needed */
+      height: auto;
+      display: block;
+      margin: 8px 0;
+    }
+    .toc a {
+      display: block;
+      margin: 4px 0;
+      text-decoration: none;
+      color: #0077cc;
+    }
+    .toc a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html#top" class="logo">
+        <svg width="22" height="22" viewBox="0 0 64 64" aria-hidden>
+          <defs>
+            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#43C0FF"/>
+              <stop offset="100%" stop-color="#1675B8"/>
+            </linearGradient>
+          </defs>
+          <rect x="8" y="8" width="48" height="48" rx="10"
+                fill="url(#g)" stroke="#0E4572" stroke-width="3"/>
+        </svg>
+        <span>Render Monitor</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#addon">Add-on</a>
+        <a href="docs.html#install-addon">Docs</a>
+        <a href="policy.html">Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="hero" style="padding:70px 0 40px">
+      <div class="bg"></div>
+      <div class="container">
+        <h1>Documentation</h1>
+        <p class="muted">Install the Blender add‑on, pair your iPhone, and start monitoring.</p>
+      </div>
+    </section>
+
+    <!-- Docs Section -->
+    <section class="section">
+      <div class="container docs-layout">
+        <!-- Table of Contents -->
+        <aside class="toc">
+          <h4>On this page</h4>
+          <a href="#install-addon">Install the Add-on</a>
+          <a href="#link-devices">Link Your Devices</a>
+        </aside>
+
+        <!-- Main Content -->
+        <div>
+          <!-- Install Add-on -->
+          <section id="install-addon" class="doc-section" style="opacity:1; transform:none;">
+            <h2>How to Install the Add-on in Blender</h2>
+            <ol class="muted">
+              <li>Open Blender.<br/><img src="images/image_3.png" alt="Open Blender" class="doc-img"/></li>
+              <li>From the top menu, go to <span class="code">Edit → Preferences</span>.<br/><img src="images/image_4.png" alt="Preferences window" class="doc-img"/></li>
+              <li>Click <span class="code">Install from Disk</span>.<br/><img src="images/image_5.png" alt="Install from Disk" class="doc-img"/></li>
+              <li>Select the downloaded <span class="code">.zip</span> file.</li>
+              <li>Make sure “Enable on Install” is checked.</li>
+              <li>Once installed, go to Render Properties → scroll down → you’ll see Render Monitor Add-on.<br/><img src="images/image_6.png" alt="Render Monitor Add-on" class="doc-img"/></li>
+            </ol>
+          </section>
+
+          <!-- Link Devices -->
+          <section id="link-devices" class="doc-section" style="opacity:1; transform:none;">
+            <h2>How to Link Your Devices</h2>
+            <ol class="muted">
+              <li>In Blender, click on <span class="code">Link Device (Get Code)</span>.<br/><img src="images/image_7.png" alt="Link Device button" class="doc-img"/></li>
+              <li>You will receive a 6-digit code.<br/><img src="images/image_8.png" alt="6-digit code" class="doc-img"/></li>
+              <li>Open the iOS app → tap the Link symbol.<br/><img src="images/image_9.png" alt="iOS Link symbol" class="doc-img"/></li>
+              <li>Enter the 6-digit code into the pop-up → tap Confirm Code.<br/><img src="images/image_10.png" alt="Confirm code" class="doc-img"/></li>
+              <li>In the Blender add-on, click <span class="code">Check Status</span>.<br/><img src="images/image_11.png" alt="Check Status" class="doc-img"/></li>
+              <li>🎉 Congratulations! Your Blender is now linked to your iOS app.<br/><img src="images/image_12.png" alt="Linked successfully" class="doc-img"/></li>
+              <li>Whenever you hit Render Animation, your render data will instantly sync with the app.<br/><img src="images/image_13.png" alt="Render syncing" class="doc-img"/></li>
+            </ol>
+            <p class="muted"><em>Frame Preview is available only for Pro users</em></p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
+      <div class="small">© <span id="year"></span> Render Monitor</div>
+      <div style="display:flex;gap:12px">
+        <a class="small" href="#addon">Add-on</a>
+        <a class="small" href="#install-addon">Docs</a>
+        <a class="small" href="policy.html">Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

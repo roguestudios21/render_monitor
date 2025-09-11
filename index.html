@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Render Monitor</title>
+  <link rel="icon" href="images/Icon_Cube-2.png"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Header -->
+<header class="header">
+  <div class="container header-inner">
+    <a href="#top" class="logo" style="display:flex;align-items:center;gap:8px;">
+      <img src="images/Icon_Cube-2.png" alt="Render Monitor Logo" style="width:32px; height:32px;"/>
+      <span>Render Monitor</span>
+    </a>
+    <nav class="nav">
+      <a href="#features">Features</a>
+      <a href="#addon">Add-on</a>
+      <a href="#how">How it works</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#faq">FAQ</a>
+      <a href="docs.html">Docs</a>
+      <a href="policy.html">Policy</a>
+    </nav>
+    <a href="#" class="btn btn-primary">Download</a>
+  </div>
+</header>
+
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="bg"></div>
+      <div class="container wrap">
+        <!-- Left side -->
+        <div class="reveal">
+          <h1>Monitor your Blender renders on the go</h1>
+          <p class="muted">
+            Live progress, ETA on your iOS Device. <br>
+            So you can monitor your renders on the go.
+          </p>
+          <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+            <a href="#addon" class="btn btn-primary">Get Blender Add-on (.zip)</a>
+            <a href="#" class="btn" id="download">Download on the App Store</a>
+          </div>
+          <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+            <span class="pill">Blender 3.X+</span>
+            <span class="pill">Live Image Preview</span>
+            <span class="pill">Secure pairing</span>
+          </div>
+        </div>
+        <!-- Right side -->
+        <aside class="reveal" aria-label="App preview">
+          <img src="images/Group 14.png"
+               alt="App preview"
+               style="max-width:360px;width:100%;height:auto;border-radius:16px;display:block;margin:auto"/>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="reveal">Features</h2>
+        <p class="sub reveal">Everything you need to stay in the loop.</p>
+        <div class="features">
+          <div class="feature reveal">
+            <div class="icon">
+              <svg viewBox="0 0 24 24"><path d="M3 12h18M12 3v18"/></svg>
+            </div>
+            <div>
+              <strong>Live progress</strong>
+              <p class="muted">% complete, current frame, elapsed time, and ETA.</p>
+            </div>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
+            </div>
+            <div>
+              <strong>Multi-Language Support</strong>
+              <p class="muted">Supports 9+ Languages including Chinese, Spanish, Japanese, German, etc.</p>
+            </div>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">
+              <svg viewBox="0 0 24 24"><path d="M12 17a5 5 0 100-10 5 5 0 000 10zM2 12h3M19 12h3"/></svg>
+            </div>
+            <div>
+              <strong>Code based pairing</strong>
+              <p class="muted">Unique code-based one-time pairing.</p>
+            </div>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>
+            </div>
+            <div>
+              <strong>Lightweight add-on</strong>
+              <p class="muted">Minimal overhead; won’t slow down Blender.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add-on -->
+<section id="addon" class="section">
+  <div class="container">
+    <h2 class="reveal">Blender Add-on</h2>
+    <p class="sub reveal">
+      Download and install the companion add-on to send render updates to your iPhone or iPad in real time.
+    </p>
+
+    <!-- Buttons -->
+    <div class="addon-buttons reveal" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px">
+      <a class="btn btn-primary" href="downloads/render_monitor.zip">
+        <svg style="width:16px;height:16px;margin-right:6px;vertical-align:middle" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+        </svg>
+        Download add-on (.zip)
+      </a>
+      <a class="btn" href="docs.html#install-addon">
+        <svg style="width:16px;height:16px;margin-right:6px;vertical-align:middle" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12 2l5.5 9h-11L12 2zm0 3.84L10.33 9h3.34L12 5.84zM4 13v7h16v-7H4zm2 2h12v3H6v-3z"/>
+        </svg>
+        Read install guide
+      </a>
+    </div>
+
+    <!-- Steps -->
+    <div class="timeline reveal" style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
+      <div class="step">
+        <div class="badge">1</div>
+        <div>
+          In Blender: <span class="code">Edit → Preferences → Add-ons → Install…</span> then select the downloaded <span class="code">.zip</span> file.
+        </div>
+      </div>
+      <div class="step">
+        <div class="badge">2</div>
+        <div>Enable <span class="code">Render Monitor</span> in the Add-ons list.</div>
+      </div>
+      <div class="step">
+        <div class="badge">3</div>
+        <div>Open the <span class="code">Render Monitor</span> panel, click <span class="code">Link Device (Get Code)</span>, then enter the code in your iOS app.</div>
+      </div>
+      <div class="step">
+        <div class="badge">4</div>
+        <div>Start a render (<span class="code">F12 → Render Animation</span>) and watch it appear on your phone.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- How it works -->
+    <section id="how" class="section">
+      <div class="container">
+        <h2 class="reveal">How it works</h2>
+        <p class="sub reveal">Install once, pair your phone, and render with peace of mind.</p>
+        <div class="timeline">
+          <div class="step reveal">
+            <div class="badge">1</div>
+            <div>
+              <strong>Install Blender add-on</strong>
+              <p class="muted">Add the Render Monitor add-on to Blender (3.X+).</p>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="badge">2</div>
+            <div>
+              <strong>Pair with iPhone or iPad only once</strong>
+              <p class="muted">Using a 6 digit unique code.</p>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="badge">3</div>
+            <div>
+              <strong>Render & relax</strong>
+              <p class="muted">Track progress live and get notified when it’s done.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section id="roadmap" class="section">
+      <div class="container">
+        <h2 class="reveal">Roadmap</h2>
+        <p class="sub reveal">Here’s what’s available now, what’s coming soon, and where we’re headed.</p>
+        <div class="roadmap">
+          <!-- Current Features -->
+          <div class="road-col reveal">
+            <span class="head-pill"><span class="dot"></span> Current Features</span>
+            <ul class="small">
+              <li>Support for 5+ languages</li>
+              <li>Live tracking of render progress</li>
+              <li>Image preview (Pro users only)</li>
+              <li>Crash detection timer (15 minutes by default)</li>
+              <li>Custom crash detection timer (up to 60 minutes for Pro users)</li>
+              <li>Estimated completion time display</li>
+              <li>Last updated timestamp from Blender</li>
+            </ul>
+          </div>
+          <!-- Coming Soon -->
+          <div class="road-col reveal">
+            <span class="head-pill"><span class="dot"></span> Coming Soon (Next Version)</span>
+            <ul class="small">
+              <li>Live Activities (Pro users)</li>
+              <li>Job History (Pro users)</li>
+            </ul>
+          </div>
+          <!-- Future Plans -->
+          <div class="road-col reveal" style="grid-column:1/-1">
+            <span class="head-pill"><span class="dot"></span> Future Plans (Next Year)</span>
+            <ul class="small">
+              <li>Support for additional 3D software beyond Blender</li>
+              <li>Studio Version for small studios</li>
+              <li>Track multiple jobs simultaneously</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 class="reveal">FAQs</h2>
+        <div class="faq-grid" style="margin-top:16px">
+          <details class="faq reveal">
+            <summary><span class="marker"></span> Why is the Image Preview not visible?</summary>
+            <p>Image Preview is a premium feature and is only available for Pro users.</p>
+          </details>
+          <details class="faq reveal">
+            <summary><span class="marker"></span> My subscription is not showing up. What should I do?</summary>
+            <p>Simply close and reopen the app. Your subscription status should refresh automatically.</p>
+          </details>
+          <details class="faq reveal">
+            <summary><span class="marker"></span> Which Blender versions are supported?</summary>
+            <p>The app currently supports Blender version 3.0 and above.</p>
+          </details>
+          <details class="faq reveal">
+            <summary><span class="marker"></span> Which iOS versions are supported?</summary>
+            <p>The app requires iOS 17.0 or later.</p>
+          </details>
+          <details class="faq reveal">
+            <summary><span class="marker"></span> I changed my iOS device, and my Pro subscription is missing. How can I restore it?</summary>
+            <p>Tap the Pro button in the top-right corner. When the paywall sheet appears, select Restore Purchases. Make sure you’re signed in with the same Apple ID that you used for the original purchase.</p>
+          </details>
+          <details class="faq reveal">
+            <summary><span class="marker"></span> Do I need to keep my computer on for monitoring to work?</summary>
+            <p>Yes. Your computer must remain on and Blender must be running the Render Monitor add-on during rendering for updates to appear in the app.</p>
+          </details>
+          <details class="faq reveal">
+            <summary><span class="marker"></span> Can I use my account on multiple devices?</summary>
+            <p>Yes. As long as you sign in with the same account, your subscription and render data will sync across devices.</p>
+          </details>
+          <details class="faq reveal">
+            <summary><span class="marker"></span> How often are updates shown in the app?</summary>
+            <p>Status updates and progress sync automatically, and Pro users also receive image previews every few frames.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+        <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="reveal">Contact</h2>
+        <p class="sub reveal">
+          For any issues or feature requests, email us at: 
+          <a href="mailto:atharv.choughule.dev@gmail.com">atharv.choughule.dev@gmail.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
+      <div class="small">© <span id="year"></span> Render Monitor</div>
+      <div style="display:flex;gap:12px">
+        <a class="small" href="#roadmap">Roadmap</a>
+        <a class="small" href="#faq">FAQ</a>
+        <a class="small" href="docs.html">Docs</a>
+        <a class="small" href="policy.html">Policy</a>
+        <a class="small" href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
